@@ -1,0 +1,241 @@
+        
+/*Change the family font of all elements to sans-serif**/
+body
+{
+    font-family:Arial, Helvetica, sans-serif  !important;
+    margin: 0%;
+}
+
+/* -------------- Change the header tag to flex == make it look nicer--------------*/
+header{
+    padding: 0 5%; /*Add space on the left and the right*/
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.342);
+    height: 60px;
+}
+
+/* -------------- Make changes using the mainNavigation class cos there are two or more nav--------------*/
+.mainNavigation
+{
+    padding-top: 18px;
+    display: flex;
+    column-gap: 40px;
+
+}
+/* -------------- Change color of nav items when you hover on top of them --------------*/
+.mainNavigation a:hover{
+    color: rgba(64, 32, 245, 0.404);
+   
+}
+/* -------------- Make changes to the Home button because the Home button is singled out! or unique --------------*/
+#homeColor
+{
+    color: rgb(170, 124, 37);
+}
+.mainNavigation a
+{
+    font-size: 20px;
+    color: rgb(30, 30, 87);
+    text-decoration: none;
+    transition-duration: 0.4s;
+}
+ 
+/*-------------- Introduction Code --------------*/
+#introCode
+{
+    display: flex;
+    margin: 50px auto;
+    width: 1100px;
+}
+button{
+    width: 30%;
+    font-size: medium;
+    font-weight: bold;
+    color: #EEEFF1;
+    background-color: #5762d5;
+    padding: 10px;
+    border: solid 1px #3c404a;
+    border-radius: 10px;
+    animation: slideUp 1s;
+    
+}
+button:hover{
+    background-color: darkblue;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+#textAndButton{
+    width: 60%;
+    padding-right: 10px;
+}
+
+#textAndButton h1{
+    font-size: 30px;
+    font-weight: bold;
+}
+#textAndButton p{
+    font-size: 18px;
+    color: rgb(53, 51, 80);
+    padding-right: 10px;
+    margin-bottom: 40px;
+}
+
+/*-------------- Create an animation to attract customers to become members of your page --------------*/
+@keyframes slideUp{
+    0%{transform: translateY(40px); opacity: 0%;}
+    75%{transform: translateY(-5px);}
+    100%{transform: translateY(0px); opacity: 100%;}
+}
+
+video{
+    border-radius: 20px;
+    width: 40%;
+}
+
+
+#titleAndLink{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 1100px;
+}
+
+#titleAndLink a{
+    text-decoration:none;
+    color: #5762d5;
+    padding-top: 20px;
+}
+
+.reviewCard{
+    position: absolute;
+    margin: 150px 0 0 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    z-index: 1;
+    transition-duration: 0.3s;
+    opacity: 0%;
+}
+.productCard1{
+    background-color: rgba(230, 230, 250, 0.527);
+    border-radius: 20px;
+    width: 200px;
+    margin: auto; 
+}
+.product-image
+{
+    border-radius: 20px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    transition-duration: 0.3s;
+}
+
+main h4{
+    font-size: 22px;
+    font-weight: bold;
+
+}
+
+#productCards{
+    display: flex;
+    flex-wrap: wrap;
+    width: 1100px;
+    margin: auto;
+    font-weight: bold;
+}
+
+main a{
+    text-decoration: none;
+    color: #5762d5;
+}
+
+#titleAndLink a:hover, main a:hover{
+    color: rgba(174, 29, 218, 0.404);
+}
+
+/* Footer edits*/
+footer{
+
+    color: white;
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    text-align: center;
+}
+
+/* Style the form up*/
+form{
+    width: 400px;
+    background: #EEEFF1;
+    border: solid 1px #3c404a71;
+    border-radius: 15px;
+    color: #3c404a;
+    padding: 25px;
+    margin: 50px auto;
+}
+
+input{
+    width: 90%;
+    font-size: 18px;
+    margin: 10px;
+    padding: 5px 10px;
+    border: solid 1px #3c404a85;
+    border-radius: 10px;
+}
+
+#tNcId{
+    width: 5%;
+}
+
+/* calculator*/
+#calc-container{
+    width: 300px;
+    margin: 100px auto;
+    background-color: #3c404a;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    border-radius: 20px;
+    gap: 10px;
+}
+
+#calc-container h2{
+    background-color: white;
+    color:  #3c404a;
+    margin: 0;
+    padding: 13px 20px 0px 20px;
+    height: 53px;
+    font-size: 35px;
+    grid-column: 1/5;
+    grid-row: 1/2;
+    border-radius: 10px;
+}
+
+#calc-container h4{
+     text-align: center;
+     background-color: #5e637271;
+     color: white;
+     margin: 0;
+     border-radius: 10px;
+     height: 45px;
+     font-size: 22px;
+     padding-top: 20px;
+     transition-duration: 0.3s;
+}
+
+#calc-container h4:hover{
+    cursor: pointer;
+    background-color: rgba(84, 236, 54, 0.87);
+    box-shadow: 0px 0px 20px rgb(119, 74, 74);
+}
+
+.operator-btn{
+    background-color: rgb(252, 248, 40) !important; 
+    color: #3c404a !important;
+}
+
+.operator-btn:hover{
+    background-color: rgba(134, 133, 40, 0.801) !important; 
+}
+

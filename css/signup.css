@@ -1,0 +1,104 @@
+/* -------------- Change the header tag to flex == make it look nicer--------------*/
+header{
+    padding: 0 5%; /*Add space on the left and the right*/
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.623);
+}
+
+/*Change the family font of all elements to sans-serif**/
+body
+{
+    font-family:Arial, Helvetica, sans-serif  !important;
+    margin: 0%;
+}
+
+/* -------------- Make changes using the mainNavigation class cos there are two or more nav--------------*/
+.mainNavigation
+{
+    background-color: rgb(195, 213, 230);
+    padding: 10px;
+}
+/* -------------- Change color of nav items when you hover on top of them --------------*/
+.mainNavigation a:hover{
+    color: rgba(64, 32, 245, 0.404);
+   
+}
+/* -------------- Make changes to all the elements with the a tag--------------*/
+.mainNavigation a
+{
+    font-size: 20px;
+    color: rgb(30, 30, 87);
+    text-decoration: none;
+    transition-duration: 0.4s;
+}
+/* -------------- Make changes to the Signup button because the Signup button is singled out! or unique --------------*/
+#signupColor
+{
+    color: rgba(51, 105, 126, 0.541);
+}
+
+footer
+{
+    background-color: #2b2343;
+    height: 300px;
+    width: 100%;
+    color: #e9e6f0;
+    text-align: center;
+}
+
+/* Style the form up*/
+form{
+    width: 400px;
+    background: #EEEFF1;
+    border: solid 1px #3c404a71;
+    border-radius: 15px;
+    color: #3c404a;
+    padding: 25px;
+    margin: 50px auto;
+}
+
+/* Style the form button when hovered*/
+form button:hover{
+    background-color: darkblue;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+input{
+    width: 90%;
+    font-size: 18px;
+    margin-right: 10px;
+    padding: 5px 10px;
+    border: solid 1px #3c404a85;
+    border-radius: 10px;
+}
+
+/* Style the form input when focused on*/
+form input:focus{
+    outline-color: rgba(240, 88, 232, 0.801);
+    transition-duration: 0.4s;
+}
+
+#suButton{
+    width: 90%;
+    font-size: medium;
+    font-weight: bold;
+    color: #EEEFF1;
+    background-color: #5762d5;
+    margin: 10px;
+    padding: 10px;
+    border: solid 1px #3c404a;
+    border-radius: 10px;
+}
+
+
+/*change the a tag of the terms and conditions in the signup page*/
+form a{
+    color: blue;
+    text-decoration: none;
+}
+
+#tNcId{
+    width: 5%;
+}
